@@ -3,11 +3,11 @@ import SwiftUI
 struct ContentView: View {
     // @State private var counter = 0
     @State var counter = 0.0
-    @State private var message = "<Patriotic message 1>"
+    @State private var message = "<بلادي بلادي بلاااادي>"
     var body: some View {
         ZStack{
             
-            LinearGradient(colors: [.red, .black, .green, .white], startPoint: .topTrailing, endPoint: .bottomLeading)
+            LinearGradient(colors: [.red, .black, .green, .white, .yellow], startPoint: .topTrailing, endPoint: .bottomLeading)
             
             VStack {
                 Text("\(Int(counter))") //"\(counter, specifier: "%.0f")")
@@ -24,7 +24,7 @@ struct ContentView: View {
                     withAnimation{
                         counter += 1
                         if counter >= 10 {
-                            message = "<Patriotic message 2>"
+                            message = "<لكي حبي و فؤادي>"
                         }
                         if counter >= 20 {
                             message = "<Patriotic message 3>"
